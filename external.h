@@ -11,9 +11,7 @@ class External : public QObject {
     Q_OBJECT
 
 public:
-   External(QString& cmd){
-       //qDebug() << "hye";
-}
+   External(QString& cmd) : m_Command(cmd){}
    ~External(){
        //qDebug() << "bye";
 

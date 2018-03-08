@@ -1,0 +1,11 @@
+[org.kde.kauthexp.external.executehelper]
+Name=Run external command action
+Description=Run external command as privileged user
+Policy=auth_admin
+Persistence=session
+
+[org.kde.kauthexp.external.copyblockhelper]
+Name=copy blocks external command action
+Description=copy block external command as privileged user
+Policy=auth_admin
+Persistence=session

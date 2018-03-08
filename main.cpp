@@ -2,6 +2,7 @@
 
 #include <QString>
 #include <iostream>
+#include <QCoreApplication>
 
 bool m1(QString& cmd) {
     External obj(cmd);
@@ -14,12 +15,13 @@ bool m2(QString& cmd) {
 }
 
 
-int main() {
+int main(int argc, char **argv) {
+    QCoreApplication app(argc, argv);
     int ch;
     QString cmd1 = "sfdisk";
     QString cmd2 = "dd";
 
-    do {
+    /*do {
         std::cin >> ch;
         switch(ch){
             case -1 : break;
@@ -30,7 +32,8 @@ int main() {
 
         }
     }while(ch>=0);
-
-    return 0;
+    */
+    m1(cmd1);
+    return app.exec();
 }
 
